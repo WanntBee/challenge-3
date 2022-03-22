@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #0D28A6;
+    --secondary-color: #CFD4ED;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 14px;
+}
+
+#main-container {
+    min-height: 100vh;
+}
+
+/* SIDE MENU */
+
+#side-menu {
+    background: var(--primary-color);
+    padding: 18px;
+    text-align: center;
+}
+
+.side-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.main-nav { 
+
+}
+.main-nav__item {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    text-align: center;
+    font-size: 12px;
+}
+.main-nav__item a {
+    color: var(--secondary-color);
+    display: block;
+    padding: 0 0px;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+}
+.main-nav__item a:hover {
+    color: white;
+    font-weight: bold;
+    background-color: #CFD4ED;
+    
+}
+.main-nav__item a::before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+.main-nav__item a:hover:before {
+    width: 5px;
+}
+
+
+/* End of SIDE MENU */
+
+/* HEADER */
+
+#main {
+    flex-grow: 1;
+    flex-shrink: 0;
+    background-color: #F0EFF5;
+}
+
+#header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    background: white;
+}
+
+.logo-dashboard {
+    width: 220px;
+    text-align: left;
+}
+
+.search-input {
+    padding: 5px 10px;
+}
+
+.right-header {
+    text-align: center;
+}
+
+.u-circle {
+    background: var(--secondary-color);
+    color: #000;
+    padding: 7px 10px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bx {
+    font-size: 22px;
+}
+
+/* End of HEADER */
+
+/* MAIN CONTENT */
+
+#content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.ext-nav {
+    width: 220px;
+    background: white;
+    border-top-style: outset;
+    
+}
+.active-page {
+    color: #000;
+    background: var(--secondary-color);
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+/* End of MAIN CONTENT */
