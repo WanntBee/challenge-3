@@ -1,0 +1,87 @@
+<body>
+
+    <div id="main-container" class="d-flex">
+
+        <!-- sidebar here -->
+        <%- include('../partials/layouts/sidebar') %>
+        
+        <!-- MAIN -->
+        <div id="main">
+            
+            <!-- navbar here -->
+            <%- include('../partials/layouts/navbar') %>
+
+            <!-- ======= CONTENT  ======= -->
+            <div id="content">
+
+                <div class="col">
+                    <div class="row">
+                        
+                        <!-- left content here -->
+                        <%- include('../partials/cars/sidemenu') %>
+
+                        <div class="col">
+                            <div id="right-content">
+                                <div class="content-title">
+                                    <nav>
+                                        <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="/cars/">Cars</a></li>
+                                        <i class='bx bx-chevron-right'></i> 
+                                        <li class="breadcrumb-item active">List Car</li>
+                                        </ol>
+                                    </nav>
+                                    <h1>List Cars
+                                        <a href="/cars/add" class="btn btn-add float-right"><i class='bx bx-plus'></i>&nbsp;Add New Car</a>
+                                        
+                                    </h1>
+                                    
+                                </div> <!-- End of Page Title -->
+                                
+                                <div class="content-car">
+
+                                    <div class="col">
+                                        <div class="row">
+                                            <div class="car-sorter">
+                                                <div class="btn-sorter" role="toolbar">
+                                                    <button type="button" class="btn btn-sort">All</button>
+                                                    <button type="button" class="btn btn-sort">Small</button>
+                                                    <button type="button" class="btn btn-sort">Medium</button>
+                                                    <button type="button" class="btn btn-sort">Large</button>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- End of Car Sorter -->
+
+                                    
+
+                                    <div class="cars-card mb-4">
+                                        
+                                        <!-- cars card here -->
+                                        <%- include('../partials/cars/card') %>
+                                        <%- include('../partials/cars/card') %>
+                                        <%- include('../partials/cars/card') %>
+
+                                    </div>  <!-- End of Car Card -->
+
+                                </div> <!-- End of Cars Content -->
+
+                            </div>
+                        </div> <!-- End of Right Content -->
+
+                    </div>
+                </div>
+
+            </div> <!-- End of Main Content -->
+
+            <!-- ======= END OF CONTENT ======= -->
+
+        </div>
+        <!-- END OF MAIN -->
+
+    </div>
+
+    
+    <!-- footer html di sini -->
+    <%- include('../partials/html/footer') %>
+
+</body>

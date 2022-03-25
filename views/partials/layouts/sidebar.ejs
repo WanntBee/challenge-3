@@ -1,0 +1,17 @@
+<!-- SIDE MENU -->
+<div id="side-menu">
+
+    <div class="main-nav text-center">
+        <div class="main-nav__logo">
+            <a href="#">
+                <div class="logo" onclick="sb_close()"></div>
+            </a>
+        </div>
+
+        <!-- sidebar item here -->
+        <%- include('../items/sidebar-item', { link: '/dashboard/', iconClass: 'bx-home-alt', label: 'Dashboard' }) %>
+        <%- include('../items/sidebar-item', { link: '/cars/', iconClass: ' bxs-truck', label: 'Cars' }) %>
+
+    </div>
+</div>
+<!-- END OF SIDE MENU -->
